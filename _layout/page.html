@@ -13,8 +13,14 @@ layout: default
     </h1>
     <div class="content">
       {{ content }}
+      {% if site.disqus.shortname %}
+        {% include disqus.html %}
+      {% endif %}
     </div>
   {% else %}
     {{ content }}
+    {% if site.disqus.shortname %}
+      {% include disqus.html %}
+    {% endif %}
   {% endif %}
 </article>
