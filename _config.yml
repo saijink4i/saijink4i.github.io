@@ -83,19 +83,19 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments: 
-  active: 'giscus' # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: 'utterances' # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     comments: true
     shortname: cheis-yu-shou-xiang # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: "saijink4i/saijink4i.github.io"
+    issue_term: "pathname"
   # Giscus options › https://giscus.app
   giscus:
-    repo: saijink4i/saijink4i.github.io
-    repo_id: 743612787
+    repo: "saijink4i/saijink4i.github.io"
+    repo_id: "743612787"
     category:
     category_id:
     mapping: # optional, default to 'pathname'
