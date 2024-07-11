@@ -1,0 +1,79 @@
+---
+layout: page
+# The Category layout
+---
+
+{% include lang.html %}
+
+<div id="page-category">
+  <h1 class="ps-lg-2">
+    <i class="far fa-folder-open fa-fw text-muted"></i>
+    {{ page.title }}
+    <span class="lead text-muted ps-2">{{ page.posts | size }}</span>
+  </h1>
+
+  <ul class="content ps-0">
+    <div id="language-selector">
+      <select onchange="changeLanguage(this.value)">
+        <option value="ko">한국어</option>
+        <option value="ja">日本語</option>
+      </select>
+    </div>
+    {% for post in page.posts %}
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="dash flex-grow-1"></span>
+        {% include datetime.html date=post.date class='text-muted small text-nowrap' lang=lang %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+  // 지원하는 언어 목록
+  const supportedLanguages = ['ko', 'ja'];
+
+  // 브라우저 언어 가져오기
+  function getBrowserLanguage() {
+      const lang = navigator.language || navigator.userLanguage;
+      const shortLang = lang.split('-')[0]; // 'ko-KR'에서 'ko'만 추출
+      return supportedLanguages.includes(shortLang) ? shortLang : 'ko'; // 지원하지 않는 언어면 한국어로 기본 설정
+  }
+
+  // 언어 변경 함수
+  function changeLanguage(lang) {
+      // Hide all language-specific content
+      document.querySelectorAll('[lang]').forEach(elem => {
+          elem.style.display = 'none';
+      });
+
+      // Show content for selected language
+      document.querySelectorAll(`[lang="${lang}"]`).forEach(elem => {
+          elem.style.display = 'block';
+      });
+
+      // Update language selector
+      document.querySelector('#language-selector select').value = lang;
+
+      // Save language preference
+      localStorage.setItem('preferredLanguage', lang);
+  }
+
+  // 초기 언어 설정 함수
+  function setInitialLanguage() {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      const browserLang = getBrowserLanguage();
+      const initialLang = savedLang || browserLang;
+      changeLanguage(initialLang);
+  }
+
+  // 이벤트 리스너 설정
+  document.addEventListener('DOMContentLoaded', (event) => {
+      setInitialLanguage();
+
+      // 언어 선택 시 이벤트 처리
+      document.querySelector('#language-selector select').addEventListener('change', (e) => {
+          changeLanguage(e.target.value);
+      });
+  });
+</script>
