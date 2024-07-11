@@ -1,8 +1,3 @@
----
----
-
-@import "{{ site.theme }}";
-
 /* 언어 선택기 스타일 */
 #language-selector {
   width: 100%;
@@ -11,8 +6,14 @@
   color: var(--sidebar-fg);
   border: 1px solid var(--sidebar-border-color);
   border-radius: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 #sidebar .nav-item {
   height: auto;
+}
+
+/* 언어별 콘텐츠 초기 숨김 */
+[lang] {
+  display: none;
 }
