@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://saijink4i.github.io/sitemap.xml

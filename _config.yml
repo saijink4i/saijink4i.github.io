@@ -202,8 +202,5 @@ default_lang: "ko"
 
 backend:
   name: github
-  repo: username/repository-name # 실제 GitHub 사용자명과 저장소 이름으로 변경하세요
+  repo: saijink4i/saijink4i.github.io # 실제 GitHub 사용자명과 저장소 이름으로 변경하세요
   branch: main # 또는 master, 저장소의 기본 브랜치에 맞춰 변경하세요
-
-languages: ["ko", "ja"]
-default_lang: "ko"

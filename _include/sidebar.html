@@ -27,18 +27,6 @@
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
-      <li>
-        테스트
-      </li>
-      <!-- 언어 선택기 추가 -->
-      <li class="nav-item">
-        <span class="nav-link">
-          <select id="language-selector" onchange="changeLanguage(this.value)">
-            <option value="ko">한국어</option>
-            <option value="ja">日本語</option>
-          </select>
-        </span>
-      </li>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
@@ -51,6 +39,16 @@
         </li>
         <!-- .nav-item -->
       {% endfor %}
+
+      <!-- 언어 선택기 추가 -->
+      <li class="nav-item">
+        <span class="nav-link">
+          <select id="language-selector" onchange="changeLanguage(this.value)">
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+          </select>
+        </span>
+      </li>
     </ul>
   </nav>
 
