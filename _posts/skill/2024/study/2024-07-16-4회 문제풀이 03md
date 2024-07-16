@@ -1,6 +1,6 @@
 ---
-title: 4회 문제풀이 01 / ABC 201 C - Secret Number
-date: 2024-07-14 12:01:02 +09:00
+title: 4회 문제풀이 03 / ABC 202 C - Made Up
+date: 2024-07-16 12:01:03 +09:00
 categories: [技術(기술), 문제풀이]
 tags:
   [
@@ -11,7 +11,7 @@ tags:
   ]
 ---
 <!-- ko -->
-# ABC 201 C - Secret Number
+# ABC 202 C - Made Up
 ## 【문제 개요】
 타카하시군은 비밀번호를 잊어먹었습니다.  비밀번호는 0부터 9까지의 숫자로 이루어진 4글자의 문자열로, 0으로 시작되는 경우도 있습니다.<br>
 0부터 9까지의 각 문자에 대해서, 타카하시군은 아래와 같이 기억하고있습니다. 그의 기억은 길이 10의 문자열 S₀S₁...S₉에 따라 표현됩니다.
@@ -71,7 +71,7 @@ xxxxx?xxxo
 15
 ```
 
-출처 : <a href="https://atcoder.jp/contests/abc201/tasks/abc201_c">https://atcoder.jp/contests/abc201/tasks/abc201_c</a> 
+출처 : <a href="https://atcoder.jp/contests/abc202/tasks/abc202_c">https://atcoder.jp/contests/abc202/tasks/abc202_c</a> 
 <!-- endko -->
 <!-- ja -->
 <!-- endja -->
