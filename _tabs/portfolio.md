@@ -72,24 +72,28 @@ title: Portfolio
 </style>
 
 <div class="portfolio-card">
-  <h3>1. 日韓多言語対応 モバイルWeb招待状 (Multi-language Wedding Invitation)</h3>
+  <h3>1. 日韓多言語対応 モバイルWeb招待状 (Wedding Invitation Project)</h3>
   <div class="tech-stack">
+    <span class="portfolio-badge">Next.js</span>
     <span class="portfolio-badge">React</span>
     <span class="portfolio-badge">TypeScript</span>
+    <span class="portfolio-badge">Tailwind CSS</span>
+    <span class="portfolio-badge">Framer Motion</span>
+    <span class="portfolio-badge">i18next</span>
     <span class="portfolio-badge">Vercel</span>
   </div>
   <ul>
-    <li><strong>✨ 概要:</strong> 日本と韓国、両国のゲストに向けて設計・開発したモバイルWeb招待状（本番稼働済）です。アクセスしたユーザーの環境や選択した言語（日本語・韓国語）に合わせてランディングページやUIが動的に変化します。両国の文化的な違いを反映した条件付きレンダリング（Conditional Rendering）ロジックを実装し、最適なユーザー体験（UX）を提供しました。</li>
+    <li><strong>✨ 概要:</strong> 日本と韓国、両国のゲストに向けて結婚式に招くために設計・開発したモバイルWeb招待状です。アクセスしたユーザーの環境や選択した言語（日本語・韓国語）に合わせてランディングページやUIが動的に変化します。両国の文化的な違いを反映した条件付きレンダリングロジックを考え実装しました。</li>
     <li><strong>💡 成果・技術的なポイント:</strong>
       <ul style="margin-top: 0.5rem; padding-left: 1.5rem; list-style-type: disc;">
-        <li><strong>多言語アーキテクチャ(i18n):</strong> ReactとTypeScriptを組み合わせることで型の安全性を確保しつつ、状態管理（State Management）を活用したスムーズな多言語切り替えを実現しました。</li>
-        <li><strong>カスタマイズされたUXロジック設計:</strong> 言語の選択によって提供する情報（例: 日本語環境では祝儀用の韓国口座番号を非表示にする等）を制御するロジックを、コンポーネント分離を用いて効率的に設計し、コードの保守性を高めました。</li>
+        <li><strong>多言語アーキテクチャ(i18n):</strong> ReactとTypeScriptを組み合わせることで型の安全性を確保しつつ、状態管理を活用したスムーズな多言語切り替えを実現しました。また、言語ファイルを独立して管理することで、将来的な言語追加にも柔軟に対応できるアーキテクチャを構築しました。</li>
+        <li><strong>カスタマイズされたUXロジック設計:</strong> 言語の選択によって提供する情報（例: 日本語環境では韓国文化だけの部分を非表示にする等）を制御するロジックを、コンポーネント分離を用いて効率的に設計し、コードの保守性を高めました。</li>
         <li><strong>グローバルインフラの活用:</strong> Vercelプラットフォームを通じて継続的デプロイ（CI/CD）パイプラインを構築し、どの国からアクセスしても高速なレンダリング速度を保証しました。</li>
       </ul>
     </li>
   </ul>
   <div class="project-links">
-    <a href="https://chei-site.vercel.app/" target="_blank"><i class="fas fa-globe"></i> 実際のWeb招待状サイト (Production Site)</a>
+    <a href="https://chei-site.vercel.app/" target="_blank"><i class="fas fa-globe"></i> 実際のWeb招待状サイト</a>
     <a href="https://github.com/saijink4i/chei-site" target="_blank"><i class="fab fa-github"></i> GitHub リポジトリ (Source Code)</a>
   </div>
 </div>
