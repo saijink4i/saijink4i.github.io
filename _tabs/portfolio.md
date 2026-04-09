@@ -121,6 +121,7 @@ title: Portfolio
     </li>
   </ul>
   <div class="project-links">
+    <a href="https://legacy-to-modern-production.up.railway.app/" target="_blank"><i class="fas fa-globe"></i> 実際の動作デモサイト</a>
     <a href="https://github.com/saijink4i/legacy-to-modern" target="_blank"><i class="fab fa-github"></i> GitHub リポジトリ (Source Code)</a>
   </div>
 </div>
