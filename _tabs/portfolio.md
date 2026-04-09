@@ -114,8 +114,8 @@ title: Portfolio
     <li><strong>✨ 概要:</strong> 製造現場やメンテナンス業務における部品の「発注・入庫・廃棄」のライフサイクルと在庫・計上を一元管理する本格的なMVC構造のWebシステムです。既存のレガシーな処理をモダンなオブジェクト指向設計へと再構築し、データ整合性とスケーラビリティを確保しました。</li>
     <li><strong>💡 成果・技術的なポイント:</strong>
       <ul style="margin-top: 0.5rem; padding-left: 1.5rem; list-style-type: disc;">
-        <li><strong>PDF動的生成と堅牢なバックエンド設計:</strong> Spring Boot環境固有のリソース参照問題を解決し、サーバーサイドでの動的なPDF帳票（精算書）生成と一括ZIP圧縮機能を構築しました。</li>
-        <li><strong>動的で安全なUI制御:</strong> Thymeleaf上でステータスに応じた条件計算を行い、ユーザーの誤操作（発注済みデータの編集など）を防ぐ直感的で堅牢なUIを実装しました。</li>
+        <li><strong>PDF動的生成と堅牢なバックエンド設計:</strong> Spring Boot環境固有のリソース参照問題を解決し、サーバーサイドでの動的なPDF帳票出力と一括ZIP圧縮機能を構築しました。</li>
+        <li><strong>動的で安全なUI制御:</strong> Thymeleaf上でステータスに応じた条件計算を行い、ユーザーの誤操作を防ぐ直感的なUIを実装しました。</li>
         <li><strong>環境の完全分離とCI/CD:</strong> DB接続などの機密情報を環境変数化して分離し、Dockerによるコンテナ化およびRailwayを用いたシームレスな継続的デプロイを実現しました。</li>
       </ul>
     </li>
