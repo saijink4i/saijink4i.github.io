@@ -96,11 +96,14 @@ tail_includes:
   </header>
 
   <div class="content">
-    {% assign content_ko = content | split: "<!-- ko -->" | last | split: "<!-- endko -->" | first %}
-    {% assign content_ja = content | split: "<!-- ja -->" | last | split: "<!-- endja -->" | first %}
-
-    <div lang="ko">{{ content_ko | markdownify }}</div>
-    <div lang="ja">{{ content_ja | markdownify }}</div>
+    {% if content contains "<!-- ko -->" %}
+      {% assign content_ko = content | split: "<!-- ko -->" | last | split: "<!-- endko -->" | first %}
+      {% assign content_ja = content | split: "<!-- ja -->" | last | split: "<!-- endja -->" | first %}
+      <div lang="ko">{{ content_ko }}</div>
+      <div lang="ja">{{ content_ja }}</div>
+    {% else %}
+      {{ content }}
+    {% endif %}
   </div>
 
   <div class="post-tail-wrapper text-muted">
