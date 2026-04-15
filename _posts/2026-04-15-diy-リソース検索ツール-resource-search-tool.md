@@ -5,7 +5,8 @@ date: 2026-05-02 15:05:00 +09:00
 categories:
   - Dev Log
   - Insights
-tags: []
+tags:
+  - 開発
 ---
 
 ### プロジェクト概要
